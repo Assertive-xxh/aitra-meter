@@ -18,6 +18,7 @@ Pre-release tags: `-alpha` tags are internal milestones. `-beta` tags are public
 - **Cost-budget and TTFT alerts** — `TenantCostBudgetExceeded` and `TTFTRegression` reference alerts, a runbook per alert, and a Helm-driven per-namespace budget mechanism (`costBudgets`). (#61)
 
 ### Fixed
+- The Helm repository is published again: the release workflow adds the chart it packages to the GitHub Pages repository at `https://aitra-ai.github.io/aitra-meter`, so the chart version and its default image tags follow the release tag. The `Publish Helm index` workflow, which failed on every run, is removed. (#75)
 - Repository builds again under `-mod=readonly` (CI default): completed `go.sum` and pruned an unused `testcontainers-go`/Docker dependency tree via `go mod tidy`.
 - `generic-prometheus` provider test referenced an invalid method on `*struct{}` and did not compile — replaced with a normal test helper.
 - Lint job restored: migrated `.golangci.yml` to the golangci-lint v2 schema (`version: "2"`) and fixed the issues it surfaced (gosec G112 `ReadHeaderTimeout` on the metrics server, govet copylocks in a test, staticcheck empty branch, gofmt/goimports formatting).
