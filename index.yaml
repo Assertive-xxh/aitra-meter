@@ -1,0 +1,30 @@
+apiVersion: v1
+entries:
+  aitra-meter:
+  - apiVersion: v2
+    appVersion: v0.0.1
+    created: "2026-11-18T10:53:32.362867519Z"
+    description: Open-source Kubernetes-native AI inference efficiency measurement
+    digest: d80cfc375a9272e609b90c4ca572f323c1602fa7433f225abab49f24cceecab4
+    home: https://github.com/aitra-ai/aitra-meter
+    keywords:
+    - ai
+    - inference
+    - efficiency
+    - observability
+    - kubernetes
+    - gpu
+    - energy
+    maintainers:
+    - name: stevenphtan
+      url: https://github.com/stevenphtan
+    - name: skdwriting
+      url: https://github.com/skdwriting
+    name: aitra-meter
+    sources:
+    - https://github.com/aitra-ai/aitra-meter
+    type: application
+    urls:
+    - aitra-meter-v0.0.1.tgz
+    version: v0.0.1
+generated: "2026-11-18T10:53:32.361663312Z"
